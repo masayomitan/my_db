@@ -58,9 +58,9 @@ services:
         source: db-store
         target: /var/lib/mysql
         volume:
-          nocopy: true
+            nocopy: true
     environment:
-      - DB_DATABASE=${DB_NAME:-oshieru_db}
-      - DB_USERNAME=${DB_USER:-root}
-      - DB_PASSWORD=${DB_PASS:-secret}
-      - MYSQL_ROOT_PASSWORD=${DB_PASS:-secret}
+        - DB_DATABASE=${DB_NAME:-oshieru_db}
+        - DB_USERNAME=${DB_USER:-root}
+        - DB_PASSWORD=${DB_PASS:-secret}
+        - MYSQL_ROOT_PASSWORD=${DB_PASS:-secret}
